@@ -1,0 +1,47 @@
+{
+  "committee": {
+    "rounds": 4,
+    "output_style": "full",
+    "language": "zh-CN",
+    "data_mode": "use_available_tools"
+  },
+  "report": {
+    "save_markdown": true,
+    "save_html": true,
+    "ask_output_location": true,
+    "output_dir": "committee_reports"
+  },
+  "model_defaults": {
+    "base_url": "inherit",
+    "api_key": "inherit",
+    "api_key_env": null,
+    "model": "inherit"
+  },
+  "weights": {
+    "file": "committee_weights.json",
+    "learning_rate": 0.08,
+    "min_weight": 0.4,
+    "max_weight": 2.5,
+    "neutral_penalty_after": 3,
+    "neutral_penalty_rate": 0.05
+  },
+  "roles": {
+    "fundamental_analyst": {"weight": 1.0, "model": "inherit"},
+    "technical_analyst": {
+      "weight": 1.0,
+      "base_url": "https://your-api-endpoint.com",
+      "api_key": "sk-YOUR-API-KEY-HERE",
+      "model": "your-model-name"
+    },
+    "macro_strategist": {"weight": 1.0, "model": "inherit"},
+    "risk_manager": {"weight": 1.0, "model": "inherit"},
+    "short_seller": {"weight": 1.0, "model": "inherit"},
+    "value_investor": {"weight": 1.0, "model": "inherit"},
+    "wall_street_trader": {"weight": 1.0, "model": "inherit"},
+    "bank_executive": {"weight": 1.0, "model": "inherit"},
+    "finance_professor": {"weight": 1.0, "model": "inherit"},
+    "strategic_investor": {"weight": 1.0, "model": "inherit"},
+    "sector_specialist": {"weight": 1.0, "model": "inherit"},
+    "retail_sentiment_observer": {"weight": 1.0, "model": "inherit"}
+  }
+}

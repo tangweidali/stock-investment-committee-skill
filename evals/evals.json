@@ -1,0 +1,23 @@
+{
+  "skill_name": "stock-investment-committee",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "用多角色投委会模式分析 NVDA，美股，周期 6 个月，激进风险偏好，讨论 5 轮。我要看到争论过程、每个角色一句话建议、最后综合意见。不要编造实时价格。",
+      "expected_output": "A Chinese multi-role debate report with 5 rounds, explicit data limitations, role disagreements, one-sentence advice per role, weighted vote, synthesis, and prediction record.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "prompt": "我想复盘上次对 600519 的投委会判断：实际结果是相对沪深300跑赢。请根据这个结果更新角色权重。这里有预测记录：fundamental_analyst bullish 80, technical_analyst bearish 60, short_seller bearish 70, value_investor bullish 75。",
+      "expected_output": "A weight-update explanation that rewards correct bullish roles, lowers incorrect bearish roles, but notes all-correct/all-wrong exceptions and asks for missing exact machine-readable record if needed.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我设计一个 OpenCode/龙虾也能用的股票辩论配置：默认沿用主模型，但允许每个角色单独设置 base_url、apikey 和模型名；默认 4 轮，可改成 8 轮；权重要能长期保存。",
+      "expected_output": "A portable configuration example and explanation covering inherit model defaults, per-role overrides, configurable rounds, and persistent weight file.",
+      "files": []
+    }
+  ]
+}
